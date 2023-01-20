@@ -28,7 +28,7 @@ public class UserTest {
 		
 		// toString 을 통해 등록된 사용자 리스트 출력
 		for (User u : um.getList()) {
-			System.out.println(u.toString());
+			System.out.println(u);
 		}
 		
 		// "김싸피" 라는 이름을 가진 사용자가 있으면 찾아서 출력
