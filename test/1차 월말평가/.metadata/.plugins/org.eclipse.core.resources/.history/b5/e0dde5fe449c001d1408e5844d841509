@@ -1,0 +1,31 @@
+package Test_230125;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		String[][] arr = new String[5][9];
+		
+		for (int r=0; r<5; r++) {
+			for (int c=0; c<9; c++) {
+				arr[r][c] = "+";
+			}
+		}
+		
+		for (int r=0; r<5; r++) {
+			for (int c=0; c<9; c++) {
+				System.out.printf("%2S", arr[r][c]);
+			}
+			System.out.println();
+		}
+		
+		
+	}
+	
+}
+
+0 0
+1 1
+2 2
+3 3
+4 4

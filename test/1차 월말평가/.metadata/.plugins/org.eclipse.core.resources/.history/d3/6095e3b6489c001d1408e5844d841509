@@ -1,0 +1,52 @@
+package Test_230125;
+
+import java.util.Arrays;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {2, 8, 6, 4, 3, 7, 9};
+//		int max = Integer.MIN_VALUE;
+//		int min = Integer.MAX_VALUE;
+		
+		int max = -1;
+		int min = 101;	
+		for (int a : arr) {
+			if (a > max) max = a;
+			if (a < min) min = a;
+		}
+		
+		int[] rankArr = new int[arr.length];
+				
+		int cnt = 1;
+		for (int i=0; i<arr.length; i++) {
+			for (int j=0; j<arr.length; j++) {
+				if (arr[i] > arr[j]) cnt++;
+				
+			}
+			rankArr[i] = cnt;
+			cnt = 1;
+		}
+		System.out.println(Arrays.toString(rankArr));
+		
+		int sum = 0;
+		for (int i=0; i<arr.length; i++) {
+			sum += rankArr[i];
+		}
+		
+		int med = 0;
+		int avg = sum / rankArr.length;
+		for (int i=0; i<arr.length; i++) {
+			if (rankArr[i] == avg)
+				med = arr[i];
+		}
+			
+		System.out.println(max);
+		System.out.println(min);
+		System.out.println(avg);
+		System.out.println(med);
+		
+	}
+	
+}

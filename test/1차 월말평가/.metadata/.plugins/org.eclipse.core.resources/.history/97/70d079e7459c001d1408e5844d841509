@@ -1,0 +1,11 @@
+package Test_230125;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {2, 8, 6, 4, 3, 7, 9}
+		
+	}
+	
+}

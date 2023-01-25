@@ -1,0 +1,31 @@
+package Test_230125;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {2, 8, 6, 4, 3, 7, 9};
+//		int max = Integer.MIN_VALUE;
+//		int min = Integer.MAX_VALUE;
+		
+		int max = -1;
+		int min = 101;
+		int med;
+		int cnt = 0;
+		for (int a : arr) {
+			if (a > max) {
+				max = a;
+				cnt++;
+				if (cnt == 3) med = a; 
+			}
+			if (a < min) min = a;
+		}
+		
+		
+		System.out.println(max);
+		System.out.println(min);
+		System.out.println(med);
+		
+	}
+	
+}

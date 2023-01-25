@@ -1,0 +1,32 @@
+package Test_230125;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		String[][] arr = new String[5][9];
+		
+		for (int r=0; r<5; r++) {
+			for (int c=r; c<9-r; c++) {
+				arr[r][c] = "+";
+			}
+		}
+		
+		for (int r=0; r<5; r++) {
+			for (int c=0; c<9; c++) {
+				if (arr[r][c] == null) System.out.printf("%2s", " ");
+				System.out.printf("%2s", arr[r][c]);
+			}
+			System.out.println();
+		}
+		
+		
+	}
+	
+}
+
+//0 0
+//1 1
+//2 2
+//3 3
+//4 4

@@ -1,0 +1,20 @@
+package Test_230125;
+
+import java.util.Scanner;
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int price = sc.nextInt();
+		int pay = 10000;
+		
+		System.out.println("투입금액: " + pay + "원");
+		System.out.println("상품금액: " + price + "원");
+		System.out.println("거스름돈: " + (pay-price) + "원");
+		System.out.println("----------------------");
+		
+	}
+	
+}
