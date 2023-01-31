@@ -1,0 +1,95 @@
+Bird 클래스, DuckInterface 인터페이스, AbleToFly 인터페이스에서 별도의 extends 선언이 없었을 때, 
+Duck 클래스의 상위 클래스가 아닌 것을 고르시오. 
+
+public class Duck extends Bird implements DuckInterface, AbleToFly{
+}
+
+1) DuckInterface
+2) Fly
+3) Object
+4) Bird
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+답: 2)
+
+
+
+
+
+
+
+

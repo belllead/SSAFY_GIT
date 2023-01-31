@@ -1,0 +1,8 @@
+문제 1.
+(상) 
+Cannot make a static reference to the non-static method 에러 발생.
+public Manager getInstance() -> public static Manager getInstance()로 바꿔주기
+(중) 2
+
+문제 2.
+4

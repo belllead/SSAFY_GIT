@@ -1,0 +1,5 @@
+접근 제한자의 허용 범위가 넓은 것부터 나열한 보기는?
+1. (default) -> private -> protected -> public  
+2. public -> (default) -> protected -> private 
+3. public -> protected -> (default) -> private
+4. private -> protected -> (default) -> public

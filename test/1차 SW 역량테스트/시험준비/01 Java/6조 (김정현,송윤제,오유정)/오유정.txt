@@ -1,0 +1,9 @@
+유정)
+
+다음 중 오류가 발생하는 것은 ? 
+1.List<TV> list = new ArrayList<TV>();
+2.List<TV> list = new LinkedList<TV>();
+3.ArrayList<TV> list = new ArrayList<TV>();
+4.ArrayList<Product> list = new ArrayList<TV>();
+
+답)4.변수쪽과 생성쪽은 타입이 반드시 같아야함!

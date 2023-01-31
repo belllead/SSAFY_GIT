@@ -1,0 +1,23 @@
+package problem1;
+
+public class Problem1 {
+	public static void main(String[] args) {
+
+		for (int i = 0, j = 0; i < 30; i++) {
+			if (i <= 15) {
+				++j;
+				System.out.printf("%d 가 출력되었습니다!", i);
+				System.out.println();
+			} else {
+				j++;
+				System.out.printf("%d 가 출력되었습니다!", j);
+				System.out.println();
+			}
+		}
+	}
+}
+// 다음중 출력되지 않는 숫자는?
+1. 14
+2. 15
+3. 16
+4. 30

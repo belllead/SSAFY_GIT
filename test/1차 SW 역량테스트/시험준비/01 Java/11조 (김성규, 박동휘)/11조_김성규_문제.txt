@@ -1,0 +1,39 @@
+다음 함수의 실행 결과를 쓰시오.
+
+public class solution{
+	public static void main(String[] args) {
+		int x = 10;
+		int y = 10;
+	
+		for(int i=0; i<x; i++) {
+			for(int j=0; j<y; j++) {
+				System.out.println(j);
+				y--;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+결과)
+0
+1
+2
+3
+4
+0
+1
+2
+0
+0

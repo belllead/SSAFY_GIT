@@ -1,0 +1,15 @@
+1. JDK와 JRE와 JVM의 차이를 아는 대로 쓰시오.
+    - JDK는 Java Development Kit의 약자
+    - JRE는 Java Runtime Environment
+    - JVM은 Java Virtual Machine
+    - JVM은 자바 가상머신으로 자바 소스코드로부터 만들어지는 자바 바이너리 파일(.class)을 실행할 수 있다.
+    또한 JVM은 플랫폼 의존적이다. 즉 리눅스의 JVM과 윈도우즈의 JVM은 다르다. 단, 컴파일된 바이너리 코드는 어떤 JVM에서도 동작시킬 수 있다.
+    - JRE는 자바 실행환경으로 JVM이 자바 프로그램을 동작시킬 때 필요한 라이브러리 파일들과 기타 파일들을 가지고 있다. JRE는 JVM의 실행환경을 구현했다고 할 수 있다.
+    - JDK는 자바 개발도구(Java Development Kit)의 약자이다.
+    JDK는 JRE + 개발을 위해 필요한 도구(javac, java등)들을 포함한다.
+    
+2. 자바의 접근제한자 4가지를 쓰시오.
+    - private
+    - (default)
+    - protected
+    - public

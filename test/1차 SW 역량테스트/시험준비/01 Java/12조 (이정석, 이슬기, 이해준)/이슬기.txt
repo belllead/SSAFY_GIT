@@ -1,0 +1,23 @@
+다음 중 메서드 오버로딩이 제대로 되지 않은 것은?
+
+	public void test(String kor, String math) {
+		System.out.println(kor + "과" + math + "시험을 통과하였습니다.");
+	}
+
+1. public void test(String kor) {
+	System.out.println(kor + "시험을 통과하였습니다.");
+}
+
+2. public void test(String kor, int mark) {
+	System.out.println(kor + "시험을" + mark + "점수로 통과하였습니다.");
+}
+
+3. public void test(int mark) {
+	System.out.println("이번 시험은" + mark + "를 넘어야 통과할 수 있습니다.");
+}
+
+4. public void test(String math, String kor) {
+	System.out.println(math + "과" + kor + "시험을 통과하였습니다.");
+}
+
+답) 4

@@ -1,0 +1,20 @@
+다음 식의 결과로 옳은 것은?
+
+import java.util.List;
+import java.util.Arrays;
+import java.util.Collections;
+
+public class test {
+	public static void main(String[] args) {
+		 List<String> list = Arrays.asList("a", "b", "A", "B");
+
+		Collections.sort(list);
+		System.out.println(list);
+
+	}
+}
+
+1. "a", "b", "A", "B"
+2. "A", "B", "a", "b"
+3. "a", "A", "b", "B"
+4. "B", "b", "A", "a"
