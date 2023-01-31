@@ -27,42 +27,31 @@ public class WhereWord {
 				}
 			}
 			
+			int[][] checked = new int[N][N];
+
 			int spaceCnt = 0;
 			int wordCnt = 0;
 			
 			for (int r=0; r<N; r++) {
 				for (int c=0; c<N; c++) {
-					
-					if (r == 0 || c == 0) {
-						if (puzzle[r][c] == 1) {
+					if (puzzle[r][c] == 1) {
+						if (c==0 || (c>=1 && puzzle[r][c-1] == 0)) {
 							for (int i=c; i<N; i++) {
-								if (puzzle[r][i] == 1) spaceCnt++;
-								else break;							
-							}
-							if (spaceCnt == K) wordCnt++;
-							spaceCnt = 0;
-							
-							for (int i=c; i<N; i++) {
-								if (puzzle[i][c] == 1) spaceCnt++;
-								else break;							
+								if (puzzle[r][i] == 1) {
+									spaceCnt++;
+									checked[r][i] = 1;
+								} else break;							
 							}
 							if (spaceCnt == K) wordCnt++;
 							spaceCnt = 0;
 						}
-					}
-					
-					if (r > 1 && c > 1) {
-						if (puzzle[r][c] == 1 && puzzle[r][c-1] == 0 && puzzle[r-1][c] == 0) {
-							for (int i=c; i<N; i++) {
-								if (puzzle[r][i] == 1) spaceCnt++;
-								else break;							
-							}
-							if (spaceCnt == K) wordCnt++;
-							spaceCnt = 0;
-							
-							for (int i=c; i<N; i++) {
-								if (puzzle[i][c] == 1) spaceCnt++;
-								else break;							
+						
+						if (r==0 || (r>=1 && puzzle[r-1][c] == 0)) {
+							for (int i=r; i<N; i++) {
+								if (puzzle[i][c] == 1) {
+									spaceCnt++;
+									checked[i][c] = 1;
+								} else break;							
 							}
 							if (spaceCnt == K) wordCnt++;
 							spaceCnt = 0;
